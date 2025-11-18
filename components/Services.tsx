@@ -1,11 +1,11 @@
 'use client';
 
-import { RoomService, ChefHat, Waves, Sparkles, Users, Plane } from 'lucide-react';
+import { Utensils, ChefHat, Waves, Sparkles, Users, Plane, Bell } from 'lucide-react';
 
 export default function Services() {
   const services = [
     {
-      icon: RoomService,
+      icon: Utensils,
       title: 'Room Service',
       description: '24/7 in-room dining with gourmet meals prepared by our expert chefs. Enjoy breakfast, lunch, dinner, and snacks delivered directly to your room with impeccable service.',
       image: 'https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -130,7 +130,7 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
               <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <RoomService className="text-blue-600" size={24} />
+                <Bell className="text-blue-600" size={24} />
               </div>
               <h3 className="font-bold text-slate-900 mb-2">Concierge</h3>
               <p className="text-slate-600 text-sm">Personalized assistance for reservations and recommendations</p>

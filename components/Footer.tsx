@@ -11,6 +11,7 @@ export default function Footer() {
     { name: 'Gallery', href: '/gallery' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Admin Panel', href: '/admin/login' },
   ];
 
   const services = [

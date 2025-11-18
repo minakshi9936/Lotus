@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { ChevronRight, Home } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 interface BreadcrumbItem {
   label: string;
@@ -55,8 +55,7 @@ export default function Breadcrumb() {
                   href={crumb.href}
                   className="flex items-center hover:text-amber-600 transition-colors"
                 >
-                  <Home size={16} className="mr-1" />
-                  <span className="sr-only">{crumb.label}</span>
+                  {crumb.label}
                 </Link>
               ) : index === breadcrumbs.length - 1 ? (
                 <span className="text-slate-900 font-medium">{crumb.label}</span>

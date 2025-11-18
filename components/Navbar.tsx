@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Hotel, Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,16 @@ export default function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-2">
-            <Hotel className="text-amber-600" size={32} />
-            <span className="text-2xl font-bold text-slate-900">
-              Lotus<span className="text-amber-600">Hotel</span>
-            </span>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/lotuslogo.png"
+              alt="Lotus Hotel"
+              width={140}
+              height={90}
+              priority
+              className="h-auto"
+            />
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (

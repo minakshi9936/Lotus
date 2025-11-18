@@ -6,8 +6,32 @@ import FloatingWhatsApp from '../components/FloatingWhatsApp';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'LuxeHotel - Experience Luxury Beyond Expectations',
-  description: 'Discover world-class hospitality at LuxeHotel. Book elegant rooms, suites, and enjoy premium amenities for an unforgettable stay.',
+  title: 'Luxury Hotel Rooms & Suites | Lotus Hotel Bookings',
+  description: 'Book elegant luxury rooms and suites at Lotus Hotel. Experience premium amenities, world-class hospitality, and unforgettable stays at competitive rates.',
+  keywords: ['hotel', 'luxury hotel', 'rooms', 'suites', 'book hotel', 'lotus hotel', 'hospitality', 'vacation', 'travel', 'resort', 'hotels in lucknow'],
+  icons: {
+    icon: [
+      { url: '/lotuslogo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/lotuslogo.png', sizes: '64x64', type: 'image/png' },
+      { url: '/lotuslogo.png', sizes: '128x128', type: 'image/png' },
+    ],
+    apple: '/lotuslogo.png',
+  },
+  openGraph: {
+    title: 'Luxury Hotel Rooms & Suites | Lotus Hotel Bookings',
+    description: 'Book elegant luxury rooms and suites at Lotus Hotel. Experience premium amenities, world-class hospitality, and unforgettable stays at competitive rates.',
+    url: 'https://lotushotel.com',
+    siteName: 'Lotus Hotel',
+    images: [
+      {
+        url: '/lotuslogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Lotus Hotel',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

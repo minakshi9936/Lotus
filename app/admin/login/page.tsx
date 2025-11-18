@@ -146,13 +146,13 @@ export default function AdminLogin() {
             </form>
 
             {/* Demo Credentials */}
-            <div className="mt-6 p-4 bg-slate-700/50 rounded-lg border border-slate-600">
+           {/* <div className="mt-6 p-4 bg-slate-700/50 rounded-lg border border-slate-600">
               <h3 className="text-sm font-medium text-slate-300 mb-2">Demo Credentials</h3>
               <p className="text-xs text-slate-400">
                 Email: admin@lotushotel.com<br />
                 Password: admin123
               </p>
-            </div>
+            </div> */}
           </CardContent>
         </Card>
 

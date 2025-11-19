@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
+        url: 'https://lotus-hotel-stay.netlify.app/lotuslogo.png',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel - Photo Gallery',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Hotel & Banquet Gallery | Photo Tour of Lotus Hotel Lucknow',
     description: 'Explore the stunning gallery of Lotus Hotel & Banquet Hall with photos of rooms and banquet halls.',
-    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotuslogo.png'],
   },
 };
 

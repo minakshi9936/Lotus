@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
+        url: 'https://lotus-hotel-stay.netlify.app/lotuslogo.png',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel - Luxury Rooms & Suites',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Luxury Rooms & Suites | Lotus Hotel in Lucknow',
     description: 'Discover luxurious and comfortable rooms with modern amenities.',
-    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotuslogo.png'],
   },
 };
 

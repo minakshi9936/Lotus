@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
+        url: 'https://lotus-hotel-stay.netlify.app/lotuslogo.png',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel & Banquet Hall Lucknow',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Lotus Hotel & Banquet Hall in Lucknow | Luxury Rooms & Event Spaces',
     description: 'Lotus Hotel & Banquet Hall in Lucknow offers luxury rooms, premium suites, and elegant banquet facilities.',
-    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotuslogo.png'],
   },
 };
 

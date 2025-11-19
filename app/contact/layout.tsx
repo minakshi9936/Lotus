@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
+        url: 'https://lotus-hotel-stay.netlify.app/lotuslogo.png',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel - Contact Us',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Lotus Hotel & Banquet Hall | Get in Touch Lucknow',
     description: 'Reach out to us for reservations, event bookings, and inquiries. Available 24/7.',
-    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotuslogo.png'],
   },
 };
 

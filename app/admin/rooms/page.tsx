@@ -112,11 +112,11 @@ export default function AdminRooms() {
                 />
                 <div className="absolute top-4 right-4">
                   <Badge
-                    variant={room.category === 'Deluxe' ? 'default' : room.category === 'Premium' ? 'secondary' : 'outline'}
+                    variant={room.category === 'Deluxe' ? 'default' : room.category === 'Executive' ? 'secondary' : 'outline'}
                     className={
                       room.category === 'Deluxe'
                         ? 'bg-amber-500 text-black'
-                        : room.category === 'Premium'
+                        : room.category === 'Executive'
                         ? 'bg-purple-500 text-white'
                         : 'border-slate-600 text-slate-300'
                     }

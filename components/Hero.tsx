@@ -38,11 +38,11 @@ export default function Hero() {
           {/* Left Side - Text Content */}
           <div className="text-white space-y-6 animate-in fade-in slide-in-from-left duration-700">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Experience Luxury
-              <span className="block text-amber-400 mt-2">Beyond Expectations</span>
+              Welcome to Lotus
+              <span className="block text-amber-400 mt-2">Where Luxury Meets Celebration</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-200 max-w-lg">
-              Indulge in world-class hospitality, elegant rooms, and unforgettable moments at our exclusive hotel destination
+              Discover premium accommodations, state-of-the-art banquet facilities, and exceptional service. From memorable weddings to corporate retreats, we create unforgettable experiences in the heart of Lucknow
             </p>
             <Button
               onClick={handleExploreRooms}

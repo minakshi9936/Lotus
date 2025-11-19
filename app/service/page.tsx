@@ -1,8 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Breadcrumb from "@/components/Breadcrumb";
 import Footer from "@/components/Footer";
+import Link from "next/link";
+import Image from "next/image";
 
-import { BedDouble, Utensils, Waves, HeartPulse, Presentation, Plane } from "lucide-react";
+import {
+  BedDouble,
+  Utensils,
+  Waves,
+  HeartPulse,
+  Presentation,
+  Plane,
+} from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -54,10 +63,66 @@ export default function Services() {
 
           {/* PAGE HEADING */}
           <div className="text-center mb-16 animate-in fade-in slide-in-from-top duration-700">
-            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Our Services</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
+              Our Services
+            </h1>
             <p className="text-slate-600 text-lg max-w-2xl mx-auto">
               Experience comfort, luxury, and world-class hospitality with our premium services.
             </p>
+          </div>
+
+          {/* 🔥 NEW TWO BIG CARDS BELOW HEADING */}
+          <div className="grid md:grid-cols-2 gap-10 mb-20">
+
+            {/* CARD 1 → Rooms */}
+            <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
+              <Image
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2mq3JhvoO5r9B66CMj2ysDeKkZqUmUnRRzA&s"
+                alt="Rooms"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-3">Rooms</h2>
+                <p className="text-gray-600 mb-4">
+                  Discover comfortable, luxurious, and premium category rooms
+                  designed for a relaxing stay.
+                </p>
+
+                <Link href="/room">
+                  <button className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-900">
+                    View
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* CARD 2 → Packages */}
+            <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
+              <Image
+                src="/banquet.jpg"
+                alt="Banquet Hall"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-3">Packages</h2>
+                <p className="text-gray-600 mb-4">
+                  Banquet hall for parties, birthdays, marriages, engagements & corporate meetings.
+                </p>
+
+                <Link href="/packages">
+                  <button className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-900">
+                    View
+                  </button>
+                </Link>
+              </div>
+            </div>
+
           </div>
 
           {/* SERVICES GRID */}
@@ -69,7 +134,9 @@ export default function Services() {
                 style={{ animationDelay: `${item.delay}ms` }}
               >
                 <item.icon size={50} className="mx-auto mb-6 text-amber-600" />
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                  {item.title}
+                </h3>
                 <p className="text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}

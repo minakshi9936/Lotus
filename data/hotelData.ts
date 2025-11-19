@@ -1,7 +1,7 @@
 export interface Room {
   id: number;
   name: string;
-  category: 'Basic' | 'Premium' | 'Deluxe';
+  category: 'Basic' | 'Executive' | 'Deluxe';
   price: number;
   image: string;
   description: string;
@@ -15,68 +15,36 @@ export const rooms: Room[] = [
     id: 1,
     name: 'Cozy Standard Room',
     category: 'Basic',
-    price: 120,
+    price: 2000,
     image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Perfect for solo travelers or couples seeking comfort and affordability with essential amenities.',
-    amenities: ['Free WiFi', 'LED TV', 'Air Conditioning', 'Coffee Maker'],
+    amenities: ['Free WiFi', 'LED TV', 'Air Conditioning'],
     capacity: '2 Guests',
-    bedType: 'Queen Bed',
+    bedType: 'double Bed',
   },
   {
     id: 2,
     name: 'Deluxe Suite',
-    category: 'Premium',
-    price: 250,
+    category: 'Deluxe',
+    price: 2500,
     image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Spacious suite with modern furnishings, city views, and enhanced comfort for a memorable stay.',
-    amenities: ['Free WiFi', 'Smart TV', 'Mini Bar', 'Air Conditioning'],
+    amenities: ['Free WiFi', 'Smart TV', 'Air Conditioning'],
     capacity: '3 Guests',
     bedType: 'King Bed',
   },
   {
     id: 3,
-    name: 'Executive Business Room',
-    category: 'Premium',
-    price: 280,
+    name: 'Budget friendly',
+    category: 'Executive',
+    price: 999,
     image: 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Designed for business travelers with workspace, high-speed internet, and executive amenities.',
-    amenities: ['Free WiFi', 'Work Desk', 'Coffee Maker', 'Air Conditioning'],
+    amenities: ['Free WiFi','Air Conditioning'],
     capacity: '2 Guests',
-    bedType: 'King Bed',
+    bedType: 'Double Bed',
   },
-  {
-    id: 4,
-    name: 'Presidential Suite',
-    category: 'Deluxe',
-    price: 450,
-    image: 'https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Ultimate luxury with panoramic views, separate living area, and premium services for VIP guests.',
-    amenities: ['Free WiFi', 'Smart TV', 'Jacuzzi', 'Butler Service'],
-    capacity: '4 Guests',
-    bedType: '2 King Beds',
-  },
-  {
-    id: 5,
-    name: 'Family Comfort Room',
-    category: 'Basic',
-    price: 180,
-    image: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Spacious accommodation perfect for families with multiple beds and child-friendly amenities.',
-    amenities: ['Free WiFi', 'LED TV', 'Air Conditioning', 'Mini Fridge'],
-    capacity: '4 Guests',
-    bedType: '2 Queen Beds',
-  },
-  {
-    id: 6,
-    name: 'Royal Penthouse',
-    category: 'Deluxe',
-    price: 600,
-    image: 'https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'The pinnacle of luxury living with private terrace, premium finishes, and personalized concierge.',
-    amenities: ['Free WiFi', 'Home Theater', 'Private Pool', 'Chef Service'],
-    capacity: '6 Guests',
-    bedType: '3 King Beds',
-  },
+ 
 ];
 
 export interface GalleryImage {

@@ -14,7 +14,8 @@ export default function Navbar() {
     { name: 'Services', href: '/service' },
     { name: 'About', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Packages', href: '/packages' },
+    { name: 'Order', href: '/'},
   ];
 
   return (
@@ -43,12 +44,12 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
+            <Link href='/contact'>
             <button
-              className="bg-amber-600 text-white px-6 py-2 rounded-md hover:bg-amber-700 transition-colors font-medium"
-              onClick={() => window.open('https://wa.me/6389202030?text=Hi%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Lotus%20Hotel.', '_blank')}
-            >
+              className="w-full mt-4 bg-amber-600 text-white px-6 py-3 rounded-md hover:bg-amber-700 transition-colors font-medium">
               Book Now
             </button>
+            </Link>
           </div>
 
           <button
@@ -72,12 +73,13 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            <Link href='/contact'>
             <button
-              className="w-full mt-4 bg-amber-600 text-white px-6 py-3 rounded-md hover:bg-amber-700 transition-colors font-medium"
-              onClick={() => window.open('https://wa.me/6389202030?text=Hi%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Lotus%20Hotel.', '_blank')}
-            >
+              className="w-full mt-4 bg-amber-600 text-white px-6 py-3 rounded-md hover:bg-amber-700 transition-colors font-medium">
               Book Now
             </button>
+            </Link>
           </div>
         )}
       </div>

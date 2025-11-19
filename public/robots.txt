@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /about
+Allow: /
+Disallow: /admin
+Disallow: /_next/
+Disallow: /api/
+
+Sitemap: https://lotus-hotel-stay.netlify.app/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

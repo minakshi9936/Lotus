@@ -12,7 +12,7 @@ import {
 interface Room {
   id: number;
   name: string;
-  category: 'Basic' | 'Premium' | 'Deluxe';
+  category: 'Basic' | 'Executive' | 'Deluxe';
   price: number;
   image: string;
   description: string;
@@ -29,7 +29,7 @@ interface RoomDetailsModalProps {
 
 const categoryColors = {
   Basic: 'bg-blue-100 text-blue-800',
-  Premium: 'bg-emerald-100 text-emerald-800',
+  Executive: 'bg-emerald-100 text-emerald-800',
   Deluxe: 'bg-amber-100 text-amber-800',
 };
 

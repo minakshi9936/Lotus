@@ -8,11 +8,11 @@ export default function Topbar() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-sm">
         <div className="flex flex-wrap items-center gap-4 md:gap-6">
           <a
-            href="tel:+1234567890"
+            href="tel:+8299507456"
             className="flex items-center gap-2 hover:text-amber-400 transition-colors"
           >
             <Phone size={16} />
-            <span>+91 6389202030</span>
+            <span>+91 9792422803, 8299507456</span>
           </a>
           <a
             href="mailto:info@citywitty.com"

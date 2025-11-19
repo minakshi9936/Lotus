@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Hotel, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const quickLinks = [
@@ -16,11 +17,9 @@ export default function Footer() {
 
   const services = [
     'Room Service',
-    'Restaurant & Bar',
+    'Restaurant',
     'Swimming Pool',
-    'Spa & Wellness',
-    'Conference Rooms',
-    'Airport Transfer',
+    'Banquet hall'
   ];
 
   return (
@@ -28,11 +27,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="animate-in fade-in slide-in-from-bottom duration-700">
-            <div className="flex items-center gap-2 mb-4">
-              <Hotel className="text-amber-400" size={32} />
-              <span className="text-2xl font-bold">
-                Lotus<span className="text-amber-400">Hotel</span>
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/lotuslogo.png"
+                alt="Lotus Hotel Logo"
+                width={200}
+                height={100}
+                priority
+              />
             </div>
             <p className="text-slate-400 mb-6 leading-relaxed">
               Experience luxury and comfort at its finest. Your perfect getaway destination awaits.
@@ -102,13 +104,13 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="text-amber-400 mt-1 flex-shrink-0" size={20} />
                 <span className="text-slate-400">
-                  123, citywitty office
+                  1/84, Viraj Khand, Gomti Nagar, Lucknow-226010
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-amber-400 flex-shrink-0" size={20} />
-                <a href="tel:+6389202030" className="text-slate-400 hover:text-amber-400 transition-colors">
-                  +91 6389202030
+                <a href="tel:+8299507456" className="text-slate-400 hover:text-amber-400 transition-colors">
+                  +91 8299507456
                 </a>
               </div>
               <div className="flex items-center gap-3">

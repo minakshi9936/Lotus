@@ -1,8 +1,48 @@
 'use client';
 
+import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const { firstName, lastName, email, phone, subject, message } = formData;
+
+    const whatsappMessage = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\n\nMessage:\n${message}`;
+
+    const phoneNumber = '918299507456';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank');
+
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    });
+  };
+
   return (
     <section id="contact" className="py-16 md:py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -27,7 +67,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Address</h4>
-                  <p className="text-slate-600">123, citywitty office</p>
+                  <p className="text-slate-600">1/84, Viraj Khand, Gomti Nagar, Lucknow-226010 </p>
                 </div>
               </div>
 
@@ -37,8 +77,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                  <a href="tel:+916389202030" className="text-slate-600 hover:text-amber-600 transition-colors">
-                    +91 6389202030
+                  <a href="tel:+918299507456" className="text-slate-600 hover:text-amber-600 transition-colors">
+                    +91 8299507456
                   </a>
                 </div>
               </div>
@@ -73,7 +113,7 @@ export default function Contact() {
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a Message</h3>
 
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
@@ -83,8 +123,11 @@ export default function Contact() {
                       type="text"
                       id="firstName"
                       name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
                       placeholder="Your first name"
+                      required
                     />
                   </div>
                   <div>
@@ -95,8 +138,11 @@ export default function Contact() {
                       type="text"
                       id="lastName"
                       name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
                       placeholder="Your last name"
+                      required
                     />
                   </div>
                 </div>
@@ -109,8 +155,11 @@ export default function Contact() {
                     type="email"
                     id="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
                     placeholder="your.email@example.com"
+                    required
                   />
                 </div>
 
@@ -122,8 +171,11 @@ export default function Contact() {
                     type="tel"
                     id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                    placeholder="+91 9876543210"
+                    placeholder="+91 1234567890"
+                    required
                   />
                 </div>
 
@@ -135,8 +187,11 @@ export default function Contact() {
                     type="text"
                     id="subject"
                     name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
                     placeholder="How can we help you?"
+                    required
                   />
                 </div>
 
@@ -147,9 +202,12 @@ export default function Contact() {
                   <textarea
                     id="message"
                     name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={4}
                     className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors resize-none"
                     placeholder="Tell us more about your inquiry..."
+                    required
                   ></textarea>
                 </div>
 

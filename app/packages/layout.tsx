@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/banquet.jpg',
+        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel - Banquet Hall Packages',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Banquet Hall Packages | Wedding & Event Packages Lucknow',
     description: 'Book premium banquet hall packages for your special events and celebrations.',
-    images: ['/banquet.jpg'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
   },
 };
 

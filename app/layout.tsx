@@ -5,8 +5,15 @@ import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const getBaseUrl = () => {
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL;
+  }
+  return 'https://lotus-hotel-stay.netlify.app/';
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://lotushotel.com'),
+  metadataBase: new URL(getBaseUrl()),
   title: 'Lotus Hotel & Banquet Hall in Lucknow | Luxury Rooms & Event Spaces',
   description: 'Lotus Hotel & Banquet Hall in Lucknow offers luxury rooms, premium suites, and elegant banquet facilities. Perfect for weddings, corporate events, and conferences. Book your perfect stay or event today.',
   keywords: ['lotus hotel lucknow', 'luxury hotel lucknow', 'hotel rooms lucknow', 'banquet hall lucknow', 'wedding venue lucknow', 'event spaces lucknow', 'luxury suites', 'conference room lucknow', 'corporate events', 'wedding halls lucknow', 'hospitality lucknow'],
@@ -26,7 +33,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/lotuslogo.png',
+        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel & Banquet Hall Lucknow',
@@ -37,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Lotus Hotel & Banquet Hall in Lucknow | Luxury Rooms & Event Spaces',
     description: 'Lotus Hotel & Banquet Hall in Lucknow offers luxury rooms, premium suites, and elegant banquet facilities.',
-    images: ['/lotuslogo.png'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
   },
 };
 

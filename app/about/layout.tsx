@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/lotuslogo.png',
+        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel - About Us',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Lotus Hotel & Banquet Hall | 15+ Years of Excellence',
     description: 'Learn about our 15+ years of excellence in luxury hospitality.',
-    images: ['/lotuslogo.png'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
   },
 };
 

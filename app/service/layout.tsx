@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/lotuslogo.png',
+        url: 'https://lotus-hotel-stay.netlify.app/lotus-logo.ico',
         width: 1200,
         height: 630,
         alt: 'Lotus Hotel - Premium Services',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Premium Hotel Services | Lotus Hotel & Banquet Hall Lucknow',
     description: 'Experience our comprehensive premium hotel services and amenities.',
-    images: ['/lotuslogo.png'],
+    images: ['https://lotus-hotel-stay.netlify.app/lotus-logo.ico'],
   },
 };
 

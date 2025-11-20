@@ -60,10 +60,10 @@ export default function AdminLogin() {
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-white hover:text-amber-400 transition-colors mb-4">
-            <Hotel className="text-amber-400" size={32} />
+          <Link href="/" className="inline-flex items-center gap-2 text-white hover:text-green-400 transition-colors mb-4">
+            <Hotel className="text-green-400" size={32} />
             <span className="text-2xl font-bold">
-              Lotus<span className="text-amber-400">Hotel</span>
+              Lotus<span className="text-green-400">Hotel</span>
             </span>
           </Link>
           <h1 className="text-3xl font-bold text-white mb-2">Admin Panel</h1>
@@ -131,7 +131,7 @@ export default function AdminLogin() {
 
               <Button
                 type="submit"
-                className="w-full bg-amber-600 hover:bg-amber-700 text-white"
+                className="w-full bg-green-600 hover:bg-green-700 text-white"
                 disabled={isLoading}
               >
                 {isLoading ? (
@@ -160,7 +160,7 @@ export default function AdminLogin() {
         <div className="text-center mt-6">
           <Link
             href="/"
-            className="text-slate-400 hover:text-amber-400 transition-colors text-sm"
+            className="text-slate-400 hover:text-green-400 transition-colors text-sm"
           >
             ← Back to Home
           </Link>

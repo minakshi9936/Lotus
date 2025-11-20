@@ -53,7 +53,7 @@ export default function Breadcrumb() {
               {index === 0 ? (
                 <Link
                   href={crumb.href}
-                  className="flex items-center hover:text-amber-600 transition-colors"
+                  className="flex items-center hover:text-green-600 transition-colors"
                 >
                   {crumb.label}
                 </Link>
@@ -62,7 +62,7 @@ export default function Breadcrumb() {
               ) : (
                 <Link
                   href={crumb.href}
-                  className="hover:text-amber-600 transition-colors"
+                  className="hover:text-green-600 transition-colors"
                 >
                   {crumb.label}
                 </Link>

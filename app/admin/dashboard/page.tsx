@@ -96,7 +96,7 @@ export default function AdminDashboard() {
       <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-800 transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0`}>
         <div className="flex items-center justify-center h-16 px-4 bg-slate-900">
           <div className="flex items-center gap-2">
-            <Hotel className="text-amber-400" size={24} />
+            <Hotel className="text-green-400" size={24} />
             <span className="text-lg font-bold text-white">LotusHotel</span>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function AdminDashboard() {
                 href={item.href}
                 className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                   item.current
-                    ? 'bg-amber-500/10 text-amber-400 border-r-2 border-amber-400'
+                    ? 'bg-green-500/10 text-green-400 border-r-2 border-green-400'
                     : 'text-slate-300 hover:bg-slate-700 hover:text-white'
                 }`}
                 onClick={() => setSidebarOpen(false)}
@@ -161,7 +161,7 @@ export default function AdminDashboard() {
               <Menu size={24} />
             </button>
             <div className="flex items-center gap-2">
-              <Hotel className="text-amber-400" size={24} />
+              <Hotel className="text-green-400" size={24} />
               <span className="text-lg font-bold text-white">LotusHotel Admin</span>
             </div>
             <div className="w-6" /> {/* Spacer for centering */}
@@ -182,7 +182,7 @@ export default function AdminDashboard() {
               <Card className="bg-slate-800 border-slate-700">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium text-slate-300">Total Rooms</CardTitle>
-                  <Bed className="h-4 w-4 text-amber-400" />
+                  <Bed className="h-4 w-4 text-green-400" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-white">24</div>
@@ -193,7 +193,7 @@ export default function AdminDashboard() {
               <Card className="bg-slate-800 border-slate-700">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium text-slate-300">Active Services</CardTitle>
-                  <Settings className="h-4 w-4 text-amber-400" />
+                  <Settings className="h-4 w-4 text-green-400" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-white">6</div>
@@ -204,7 +204,7 @@ export default function AdminDashboard() {
               <Card className="bg-slate-800 border-slate-700">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium text-slate-300">Gallery Images</CardTitle>
-                  <Image className="h-4 w-4 text-amber-400" />
+                  <Image className="h-4 w-4 text-green-400" />
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-white">42</div>
@@ -310,7 +310,7 @@ export default function AdminDashboard() {
                       <CardContent className="p-4">
                         <div className="flex items-center gap-3">
                           <div className="p-2 bg-slate-700 rounded-lg">
-                            <item.icon className="h-5 w-5 text-amber-400" />
+                            <item.icon className="h-5 w-5 text-green-400" />
                           </div>
                           <div>
                             <h3 className="font-medium text-white">{item.name}</h3>

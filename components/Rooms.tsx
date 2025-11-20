@@ -20,7 +20,7 @@ const rooms: Room[] = [
    {
     id: 1,
     name: 'Cozy Standard Room',
-    category: 'Basic',
+    category: 'Executive',
     price: 2000,
     image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Perfect for solo travelers or couples seeking comfort and affordability with essential amenities.',
@@ -70,7 +70,7 @@ export default function Rooms() {
   const categoryColors = {
   Basic: 'bg-blue-100 text-blue-800',
   Executive: 'bg-emerald-100 text-emerald-800',
-  Deluxe: 'bg-amber-100 text-amber-800',
+  Deluxe: 'bg-green-100 text-green-800',
 };
 
 const amenityIcons: { [key: string]: any } = {
@@ -113,13 +113,13 @@ const amenityIcons: { [key: string]: any } = {
                   </span>
                 </div>
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                  <span className="text-amber-600 font-bold text-lg">₹{room.price}</span>
+                  <span className="text-green-600 font-bold text-lg">₹{room.price}</span>
                   <span className="text-slate-600 text-sm">/night</span>
                 </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-600 transition-colors">
                   {room.name}
                 </h3>
 
@@ -155,7 +155,7 @@ const amenityIcons: { [key: string]: any } = {
 
                 <button
                   onClick={() => handleBookNow(room)}
-                  className="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition-colors font-semibold group-hover:shadow-lg"
+                  className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold group-hover:shadow-lg"
                 >
                   Book Now
                 </button>

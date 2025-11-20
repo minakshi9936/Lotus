@@ -89,7 +89,7 @@ export default function Gallery() {
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-4 right-4 text-white hover:text-amber-400 transition-colors"
+              className="absolute top-4 right-4 text-white hover:text-green-400 transition-colors"
               onClick={() => setSelectedImage(null)}
               aria-label="Close"
             >

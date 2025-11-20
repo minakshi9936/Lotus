@@ -62,8 +62,8 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <MapPin className="text-amber-600" size={24} />
+                <div className="bg-green-100 p-3 rounded-lg">
+                  <MapPin className="text-green-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Address</h4>
@@ -72,32 +72,32 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <Phone className="text-amber-600" size={24} />
+                <div className="bg-green-100 p-3 rounded-lg">
+                  <Phone className="text-green-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                  <a href="tel:+918299507456" className="text-slate-600 hover:text-amber-600 transition-colors">
+                  <a href="tel:+918299507456" className="text-slate-600 hover:text-green-600 transition-colors">
                     +91 8299507456
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <Mail className="text-amber-600" size={24} />
+                <div className="bg-green-100 p-3 rounded-lg">
+                  <Mail className="text-green-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
-                  <a href="mailto:info@citywitty.com" className="text-slate-600 hover:text-amber-600 transition-colors">
+                  <a href="mailto:info@citywitty.com" className="text-slate-600 hover:text-green-600 transition-colors">
                     info@citywitty.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-amber-100 p-3 rounded-lg">
-                  <Clock className="text-amber-600" size={24} />
+                <div className="bg-green-100 p-3 rounded-lg">
+                  <Clock className="text-green-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Business Hours</h4>
@@ -125,7 +125,7 @@ export default function Contact() {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
                       placeholder="Your first name"
                       required
                     />
@@ -140,7 +140,7 @@ export default function Contact() {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
                       placeholder="Your last name"
                       required
                     />
@@ -157,7 +157,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
                     placeholder="your.email@example.com"
                     required
                   />
@@ -173,7 +173,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
                     placeholder="+91 1234567890"
                     required
                   />
@@ -189,7 +189,7 @@ export default function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors"
                     placeholder="How can we help you?"
                     required
                   />
@@ -205,7 +205,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-colors resize-none"
                     placeholder="Tell us more about your inquiry..."
                     required
                   ></textarea>
@@ -213,7 +213,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-amber-600 text-white py-3 px-6 rounded-lg hover:bg-amber-700 transition-colors font-semibold flex items-center justify-center gap-2"
+                  className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-semibold flex items-center justify-center gap-2"
                 >
                   <Send size={20} />
                   Send Message

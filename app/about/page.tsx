@@ -37,7 +37,7 @@ export default function About() {
                   alt="Hotel Exterior"
                   className="rounded-2xl shadow-2xl"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-amber-600 text-white p-6 rounded-xl shadow-xl">
+                <div className="absolute -bottom-6 -right-6 bg-green-600 text-white p-6 rounded-xl shadow-xl">
                   <div className="text-3xl font-bold">15+</div>
                   <div className="text-sm">Years of Excellence</div>
                 </div>
@@ -69,7 +69,7 @@ export default function About() {
                     className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-in fade-in zoom-in"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <stat.icon className="text-amber-600 mb-3" size={32} />
+                    <stat.icon className="text-green-600 mb-3" size={32} />
                     <div className="text-3xl font-bold text-slate-900 mb-1">
                       {stat.value}
                     </div>
@@ -115,7 +115,7 @@ export default function About() {
                   className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all animate-in fade-in zoom-in"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <item.icon className="text-amber-600 mb-4" size={36} />
+                  <item.icon className="text-green-600 mb-4" size={36} />
                   <h4 className="text-xl font-semibold text-slate-900 mb-2">{item.title}</h4>
                   <p className="text-slate-600 leading-relaxed">{item.desc}</p>
                 </div>

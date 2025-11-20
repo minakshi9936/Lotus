@@ -88,7 +88,7 @@ export default function Services() {
                     alt={service.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4 bg-amber-600 text-white p-2 rounded-lg">
+                  <div className="absolute top-4 left-4 bg-green-600 text-white p-2 rounded-lg">
                     <service.icon size={24} />
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function Services() {
                     <ul className="space-y-1">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="text-slate-600 text-sm flex items-center">
-                          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full mr-2 flex-shrink-0"></span>
+                          <span className="w-1.5 h-1.5 bg-green-600 rounded-full mr-2 flex-shrink-0"></span>
                           {feature}
                         </li>
                       ))}
@@ -173,10 +173,10 @@ export default function Services() {
             Book your stay today and discover the difference our premium services can make
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition-colors font-semibold shadow-lg hover:shadow-xl">
+            <button className="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors font-semibold shadow-lg hover:shadow-xl">
               Book Your Stay
             </button>
-            <button className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-lg hover:bg-amber-600 hover:text-white transition-colors font-semibold">
+            <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg hover:bg-green-600 hover:text-white transition-colors font-semibold">
               Contact Us
             </button>
           </div>

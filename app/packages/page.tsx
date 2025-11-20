@@ -97,7 +97,7 @@ export default function PackagesPage() {
                 </p>
               </div>
 
-              <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg text-lg font-medium hover:bg-blue-700">
+              <button className="mt-6 w-full bg-green-600 text-white py-3 rounded-lg text-lg font-medium hover:bg-blue-700">
                 Book Now
               </button>
             </div>

@@ -30,7 +30,7 @@ interface RoomDetailsModalProps {
 const categoryColors = {
   Basic: 'bg-blue-100 text-blue-800',
   Executive: 'bg-emerald-100 text-emerald-800',
-  Deluxe: 'bg-amber-100 text-amber-800',
+  Deluxe: 'bg-green-100 text-green-800',
 };
 
 const amenityIcons: { [key: string]: any } = {
@@ -84,7 +84,7 @@ export default function RoomDetailsModal({ room, isOpen, onClose }: RoomDetailsM
               </span>
             </div>
             <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-              <span className="text-amber-600 font-bold text-lg">₹{room.price}</span>
+              <span className="text-green-600 font-bold text-lg">₹{room.price}</span>
               <span className="text-slate-600 text-sm">/night</span>
             </div>
           </div>
@@ -123,10 +123,10 @@ export default function RoomDetailsModal({ room, isOpen, onClose }: RoomDetailsM
             </div>
 
             {/* Price Summary */}
-            <div className="bg-amber-50 p-4 rounded-lg">
+            <div className="bg-green-50 p-4 rounded-lg">
               <div className="flex justify-between items-center">
                 <span className="text-slate-700 font-medium">Price per night:</span>
-                <span className="text-2xl font-bold text-amber-600">₹{room.price}</span>
+                <span className="text-2xl font-bold text-green-600">₹{room.price}</span>
               </div>
               <p className="text-sm text-slate-600 mt-1">
                 * Prices may vary based on season and availability
@@ -136,7 +136,7 @@ export default function RoomDetailsModal({ room, isOpen, onClose }: RoomDetailsM
             {/* Book Now Button */}
             <button
               onClick={() => handleBookNow(room)}
-              className="w-full bg-amber-600 text-white py-3 px-6 rounded-lg hover:bg-amber-700 transition-colors font-semibold text-lg"
+              className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg"
             >
               Book Now via WhatsApp
             </button>

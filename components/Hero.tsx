@@ -26,9 +26,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-cover bg-center"
+      className="relative min-h-screen flex items-center bg-contain  bg-center"
       style={{
-        backgroundImage: 'url(https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+        backgroundImage: 'url(https://res.cloudinary.com/dh9uxczld/image/upload/v1763633286/lotus-herobg_hvopdt.jpg)',
       }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="text-white space-y-6 animate-in fade-in slide-in-from-left duration-700">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Welcome to Lotus
-              <span className="block text-amber-400 mt-2">Where Luxury Meets Celebration</span>
+              <span className="block text-green-400 mt-2">Where Luxury Meets Celebration</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-200 max-w-lg">
               Discover premium accommodations, state-of-the-art banquet facilities, and exceptional service. From memorable weddings to corporate retreats, we create unforgettable experiences in the heart of Lucknow
@@ -47,7 +47,7 @@ export default function Hero() {
             <Button
               onClick={handleExploreRooms}
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-md font-semibold text-lg inline-flex items-center gap-2 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md font-semibold text-lg inline-flex items-center gap-2 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Explore Our Rooms
               <ChevronRight className="group-hover:translate-x-1 transition-transform" size={20} />
@@ -67,7 +67,7 @@ export default function Hero() {
                     <Input
                       id="checkin"
                       type="date"
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-amber-400"
+                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-green-400"
                       placeholder="Select check-in date"
                     />
                     <Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white/70" size={18} />
@@ -81,7 +81,7 @@ export default function Hero() {
                     <Input
                       id="checkout"
                       type="date"
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-amber-400"
+                      className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-green-400"
                       placeholder="Select check-out date"
                     />
                     <Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white/70" size={18} />
@@ -93,7 +93,7 @@ export default function Hero() {
                   <Label htmlFor="guests" className="text-white font-medium">Number of Guests</Label>
                   <div className="relative">
                     <Select>
-                      <SelectTrigger className="bg-white/20 border-white/30 text-white focus:border-amber-400">
+                      <SelectTrigger className="bg-white/20 border-white/30 text-white focus:border-green-400">
                         <SelectValue placeholder="Select guests" />
                       </SelectTrigger>
                       <SelectContent>
@@ -111,7 +111,7 @@ export default function Hero() {
                 {/* Book Now Button */}
                 <Button
                   onClick={handleBookNow}
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-md font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-md font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Book Now
                 </Button>

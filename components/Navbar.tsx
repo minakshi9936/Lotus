@@ -38,15 +38,15 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-slate-700 hover:text-amber-600 font-medium transition-colors relative group"
+                className="text-slate-700 hover:text-green-600 font-medium transition-colors relative group"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
             <Link href='/contact'>
             <button
-              className="w-full mt-4 bg-amber-600 text-white px-6 py-3 rounded-md hover:bg-amber-700 transition-colors font-medium">
+              className="w-full mt-4 bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors font-medium">
               Book Now
             </button>
             </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="block py-3 text-slate-700 hover:text-amber-600 font-medium transition-colors border-b border-slate-100"
+                className="block py-3 text-slate-700 hover:text-green-600 font-medium transition-colors border-b border-slate-100"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
@@ -76,7 +76,7 @@ export default function Navbar() {
 
             <Link href='/contact'>
             <button
-              className="w-full mt-4 bg-amber-600 text-white px-6 py-3 rounded-md hover:bg-amber-700 transition-colors font-medium">
+              className="w-full mt-4 bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors font-medium">
               Book Now
             </button>
             </Link>

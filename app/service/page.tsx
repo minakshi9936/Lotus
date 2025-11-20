@@ -23,7 +23,7 @@ export default function Services() {
     },
     {
       icon: Utensils,
-      title: "Restaurant & Bar",
+      title: "Restaurant ",
       desc: "Enjoy fine dining with world-class cuisine and a refreshing bar atmosphere.",
       delay: 100,
     },
@@ -33,24 +33,7 @@ export default function Services() {
       desc: "Relax and unwind in our clean, temperature-controlled luxurious swimming pool.",
       delay: 200,
     },
-    {
-      icon: HeartPulse,
-      title: "Spa & Wellness",
-      desc: "Rejuvenate your body and mind with professional spa and wellness treatments.",
-      delay: 300,
-    },
-    {
-      icon: Presentation,
-      title: "Conference Rooms",
-      desc: "Spacious and well-equipped conference halls for business events and meetings.",
-      delay: 400,
-    },
-    {
-      icon: Plane,
-      title: "Airport Transfer",
-      desc: "Hassle-free pickup and drop service to and from the airport for all guests.",
-      delay: 500,
-    },
+    
   ];
 
   return (
@@ -133,7 +116,7 @@ export default function Services() {
                 className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-8 text-center animate-in fade-in zoom-in"
                 style={{ animationDelay: `${item.delay}ms` }}
               >
-                <item.icon size={50} className="mx-auto mb-6 text-amber-600" />
+                <item.icon size={50} className="mx-auto mb-6 text-green-600" />
                 <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   {item.title}
                 </h3>

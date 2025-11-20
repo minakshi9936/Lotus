@@ -95,7 +95,7 @@ export default function Testimonial() {
         key={i}
         size={16}
         className={`${
-          i < rating ? 'text-amber-400 fill-amber-400' : 'text-slate-300'
+          i < rating ? 'text-green-400 fill-green-400' : 'text-slate-300'
         }`}
       />
     ));
@@ -122,7 +122,7 @@ export default function Testimonial() {
           {/* Main Testimonial Display */}
           <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl transition-opacity duration-500 ease-in-out">
             <div className="flex items-center mb-6">
-              <Quote className="text-amber-600 mr-3" size={32} />
+              <Quote className="text-green-600 mr-3" size={32} />
               <div className="flex">
                 {renderStars(testimonials[currentIndex].rating)}
               </div>
@@ -142,7 +142,7 @@ export default function Testimonial() {
                 <div>
                   <h4 className="font-bold text-slate-900 text-lg">{testimonials[currentIndex].name}</h4>
                   <p className="text-slate-600">{testimonials[currentIndex].position}</p>
-                  <p className="text-sm text-amber-600">{testimonials[currentIndex].location}</p>
+                  <p className="text-sm text-green-600">{testimonials[currentIndex].location}</p>
                 </div>
               </div>
 
@@ -150,14 +150,14 @@ export default function Testimonial() {
               <div className="flex gap-2">
                 <button
                   onClick={goToPrevious}
-                  className="p-2 rounded-full bg-slate-100 hover:bg-amber-100 text-slate-600 hover:text-amber-600 transition-colors"
+                  className="p-2 rounded-full bg-slate-100 hover:bg-green-100 text-slate-600 hover:text-green-600 transition-colors"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft size={20} />
                 </button>
                 <button
                   onClick={goToNext}
-                  className="p-2 rounded-full bg-slate-100 hover:bg-amber-100 text-slate-600 hover:text-amber-600 transition-colors"
+                  className="p-2 rounded-full bg-slate-100 hover:bg-green-100 text-slate-600 hover:text-green-600 transition-colors"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight size={20} />
@@ -174,7 +174,7 @@ export default function Testimonial() {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? 'bg-amber-600 scale-125'
+                    ? 'bg-green-600 scale-125'
                     : 'bg-slate-300 hover:bg-slate-400'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}

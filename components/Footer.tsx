@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-slate-900 text-white pt-16 pb-8">
+    <footer id="contact" className="bg-[#b6e3c5] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="animate-in fade-in slide-in-from-bottom duration-700">
@@ -42,28 +42,28 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-full hover:bg-amber-600 transition-colors"
+                className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-full hover:bg-amber-600 transition-colors"
+                className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-full hover:bg-amber-600 transition-colors"
+                className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
               </a>
               <a
                 href="#"
-                className="bg-slate-800 p-2 rounded-full hover:bg-amber-600 transition-colors"
+                className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -72,13 +72,13 @@ export default function Footer() {
           </div>
 
           <div className="animate-in fade-in slide-in-from-bottom duration-700" style={{ animationDelay: '100ms' }}>
-            <h3 className="text-xl font-bold mb-4 text-amber-400">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4 text-green-600">Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-amber-400 transition-colors inline-block hover:translate-x-2 transition-transform"
+                    className="text-slate-400 hover:text-green-400 transition-colors inline-block hover:translate-x-2 transition-transform"
                   >
                     {link.name}
                   </Link>
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
 
           <div className="animate-in fade-in slide-in-from-bottom duration-700" style={{ animationDelay: '200ms' }}>
-            <h3 className="text-xl font-bold mb-4 text-amber-400">Services</h3>
+            <h3 className="text-xl font-bold mb-4 text-green-600">Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service} className="text-slate-400">
@@ -99,23 +99,23 @@ export default function Footer() {
           </div>
 
           <div className="animate-in fade-in slide-in-from-bottom duration-700" style={{ animationDelay: '300ms' }}>
-            <h3 className="text-xl font-bold mb-4 text-amber-400">Contact Info</h3>
+            <h3 className="text-xl font-bold mb-4 text-green-600">Contact Info</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="text-amber-400 mt-1 flex-shrink-0" size={20} />
+                <MapPin className="text-green-400 mt-1 flex-shrink-0" size={20} />
                 <span className="text-slate-400">
                   1/84, Viraj Khand, Gomti Nagar, Lucknow-226010
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="text-amber-400 flex-shrink-0" size={20} />
-                <a href="tel:+8299507456" className="text-slate-400 hover:text-amber-400 transition-colors">
+                <Phone className="text-green-400 flex-shrink-0" size={20} />
+                <a href="tel:+8299507456" className="text-slate-400 hover:text-green-400 transition-colors">
                   +91 8299507456
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="text-amber-400 flex-shrink-0" size={20} />
-                <a href="mailto:info@citywitty.com" className="text-slate-400 hover:text-amber-400 transition-colors">
+                <Mail className="text-green-400 flex-shrink-0" size={20} />
+                <a href="mailto:info@citywitty.com" className="text-slate-400 hover:text-green-400 transition-colors">
                   info@citywitty.com
                 </a>
               </div>

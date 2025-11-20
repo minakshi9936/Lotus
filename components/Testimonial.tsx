@@ -9,59 +9,60 @@ export default function Testimonial() {
 
   const testimonials = [
     {
-      id: 1,
-      name: 'Sarah Johnson',
-      position: 'Business Executive',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'Exceptional service and luxurious accommodations. The attention to detail and personalized care made our stay truly memorable. The spa treatments were outstanding!',
-      location: 'New York, USA'
-    },
-    {
-      id: 2,
-      name: 'Rajesh Kumar',
-      position: 'Family Traveler',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'Perfect family destination! The kids loved the pool and the family room was spacious and comfortable. The staff went above and beyond to make our vacation special.',
-      location: 'Mumbai, India'
-    },
-    {
-      id: 3,
-      name: 'Emily Chen',
-      position: 'Wedding Guest',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'Attended a wedding here and was blown away by the elegance and sophistication. The banquet hall was beautifully decorated and the catering was exquisite.',
-      location: 'Singapore'
-    },
-    {
-      id: 4,
-      name: 'Michael Rodriguez',
-      position: 'Conference Attendee',
-      image: 'https://images.pexels.com/photos/2182974/pexels-photo-2182974.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'Outstanding conference facilities with state-of-the-art technology. The business center was well-equipped and the staff provided excellent support throughout our event.',
-      location: 'Barcelona, Spain'
-    },
-    {
-      id: 5,
-      name: 'Priya Sharma',
-      position: 'Luxury Traveler',
-      image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'The presidential suite exceeded all expectations. Breathtaking views, impeccable service, and attention to every detail. A truly luxurious experience!',
-      location: 'Delhi, India'
-    },
-    {
-      id: 6,
-      name: 'David Thompson',
-      position: 'Honeymoon Couple',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'Romantic and intimate atmosphere perfect for our honeymoon. The couples massage and private dinner on the terrace were unforgettable moments.',
-      location: 'London, UK'
-    }
+  id: 1,
+  name: 'Arjun Verma',
+  position: 'Solo Traveler',
+  image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400',
+  rating: 5,
+  text: 'Amazing hospitality! The rooms were spotless, and the staff was extremely polite. Loved the peaceful ambiance and quick room service.',
+  location: 'Jaipur, India'
+},
+{
+  id: 2,
+  name: 'Neha Patel',
+  position: 'Weekend Visitor',
+  image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400',
+  rating: 5,
+  text: 'A perfect weekend getaway! From the delicious food to the cozy rooms, everything was top-notch. Highly recommended for families and couples.',
+  location: 'Ahmedabad, India'
+},
+{
+  id: 3,
+  name: 'Vikram Singh',
+  position: 'Corporate Guest',
+  image: 'https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=400',
+  rating: 5,
+  text: 'Excellent place for a business stay. The conference facilities were modern, and the staff ensured everything ran smoothly throughout our meetings.',
+  location: 'Bangalore, India'
+},
+{
+  id: 4,
+  name: 'Aditi Kapoor',
+  position: 'Event Organizer',
+  image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+  rating: 5,
+  text: 'Hosted a corporate event here and was impressed by the management and service. The hall setup, catering, and coordination were flawless.',
+  location: 'Chandigarh, India'
+},
+{
+  id: 5,
+  name: 'Rohan Mehta',
+  position: 'Couple Traveler',
+  image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400',
+  rating: 5,
+  text: 'Lovely experience! The ambiance, food, and hospitality made our trip memorable. A special thanks for arranging a surprise candlelight dinner.',
+  location: 'Surat, India'
+},
+{
+  id: 6,
+  name: 'Sneha Reddy',
+  position: 'Family Guest',
+  image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+  rating: 5,
+  text: 'Great stay for families. My kids enjoyed the pool and play area a lot. The staff was patient, courteous, and always ready to help.',
+  location: 'Hyderabad, India'
+}
+
   ];
 
   // Auto-slide functionality

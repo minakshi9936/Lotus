@@ -48,26 +48,13 @@ export default function Footer() {
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/hotel_lotuspalace?igsh=MWxraGg2NmpidXB6Mg"
                 className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
-              <a
-                href="#"
-                className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
-                className="bg-slate-800 p-2 rounded-full hover:bg-green-600 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
+             
             </div>
           </div>
 
@@ -109,14 +96,15 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-green-400 flex-shrink-0" size={20} />
-                <a href="tel:+8299507456" className="text-slate-400 hover:text-green-400 transition-colors">
-                  +91 8299507456
+                <a href="tel:+9565799909" className="text-slate-400 hover:text-green-400 transition-colors">
+                  +91 9565799909
                 </a>
+                
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-green-400 flex-shrink-0" size={20} />
                 <a href="mailto:info@citywitty.com" className="text-slate-400 hover:text-green-400 transition-colors">
-                  info@citywitty.com
+                  supreet.bps@gmail.com
                 </a>
               </div>
             </div>

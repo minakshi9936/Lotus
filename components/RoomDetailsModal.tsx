@@ -51,7 +51,7 @@ const amenityIcons: { [key: string]: any } = {
 
 const handleBookNow = (room: Room) => {
   const message = `Hi, I'm interested in booking the ${room.name}. Price: ₹${room.price}/night. Capacity: ${room.capacity}. Bed Type: ${room.bedType}. Amenities: ${room.amenities.join(', ')}.`;
-  const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`; // Replace with actual WhatsApp number
+  const whatsappUrl = `https://wa.me/919565799909?text=${encodeURIComponent(message)}`; // Replace with actual WhatsApp number
   window.open(whatsappUrl, '_blank');
 };
 

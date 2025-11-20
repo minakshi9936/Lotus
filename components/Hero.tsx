@@ -13,7 +13,7 @@ export default function Hero() {
 
   const handleBookNow = () => {
     // Placeholder WhatsApp number - replace with actual number
-    const phoneNumber = '+1234567890';
+    const phoneNumber = '919565799909';
     const message = 'Hello, I would like to book a room. Please provide more details.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 
 export default function FloatingWhatsApp() {
   const handleClick = () => {
-    window.open('https://wa.me/6389202030?text=Hi%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Lotus%20Hotel.', '_blank');
+    window.open('https://wa.me/919565799909?text=Hi%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Lotus%20Hotel.', '_blank');
   };
 
   return (

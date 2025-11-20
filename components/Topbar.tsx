@@ -12,14 +12,14 @@ export default function Topbar() {
             className="flex items-center gap-2 hover:text-green-400 transition-colors"
           >
             <Phone size={16} />
-            <span>+91 9792422803, 8299507456</span>
+            <span>+91 9792422803, 9565799909</span>
           </a>
           <a
             href="mailto:info@citywitty.com"
             className="flex items-center gap-2 hover:text-green-400 transition-colors"
           >
             <Mail size={16} />
-            <span>info@citywitty.com</span>
+            <span>supreet.bps@gmail.com</span>
           </a>
         </div>
         <div className="flex items-center gap-4">
@@ -31,19 +31,13 @@ export default function Topbar() {
             <Facebook size={18} />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/hotel_lotuspalace?igsh=MWxraGg2NmpidXB6Mg"
             className="hover:text-green-400 transition-colors"
             aria-label="Instagram"
           >
             <Instagram size={18} />
           </a>
-          <a
-            href="#"
-            className="hover:text-green-400 transition-colors"
-            aria-label="Twitter"
-          >
-            <Twitter size={18} />
-          </a>
+        
         </div>
       </div>
     </div>

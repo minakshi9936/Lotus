@@ -28,7 +28,7 @@ export default function Contact() {
 
     const whatsappMessage = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\n\nMessage:\n${message}`;
 
-    const phoneNumber = '918299507456';
+    const phoneNumber = '919565799909';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
     window.open(whatsappUrl, '_blank');
@@ -77,8 +77,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                  <a href="tel:+918299507456" className="text-slate-600 hover:text-green-600 transition-colors">
-                    +91 8299507456
+                  <a href="tel:+919565799909" className="text-slate-600 hover:text-green-600 transition-colors">
+                    +91 9565799909
                   </a>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
                   <a href="mailto:info@citywitty.com" className="text-slate-600 hover:text-green-600 transition-colors">
-                    info@citywitty.com
+                    supreet.bps@gmail.com
                   </a>
                 </div>
               </div>

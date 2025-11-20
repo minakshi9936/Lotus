@@ -36,7 +36,7 @@ export default function Footer() {
                 priority
               />
             </div>
-            <p className="text-slate-400 mb-6 leading-relaxed">
+            <p className="text-black mb-6 leading-relaxed">
               Experience luxury and comfort at its finest. Your perfect getaway destination awaits.
             </p>
             <div className="flex gap-4">
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-green-400 transition-colors inline-block hover:translate-x-2 transition-transform"
+                    className="text-black hover:text-green-400 transition-colors inline-block hover:translate-x-2 transition-transform"
                   >
                     {link.name}
                   </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4 text-green-600">Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
-                <li key={service} className="text-slate-400">
+                <li key={service} className="text-black">
                   {service}
                 </li>
               ))}
@@ -90,20 +90,20 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="text-green-400 mt-1 flex-shrink-0" size={20} />
-                <span className="text-slate-400">
+                <span className="text-black">
                   1/84, Viraj Khand, Gomti Nagar, Lucknow-226010
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-green-400 flex-shrink-0" size={20} />
-                <a href="tel:+9565799909" className="text-slate-400 hover:text-green-400 transition-colors">
+                <a href="tel:+9565799909" className="text-black hover:text-green-400 transition-colors">
                   +91 9565799909
                 </a>
                 
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="text-green-400 flex-shrink-0" size={20} />
-                <a href="mailto:info@citywitty.com" className="text-slate-400 hover:text-green-400 transition-colors">
+                <a href="mailto:info@citywitty.com" className="text-black hover:text-green-400 transition-colors">
                   supreet.bps@gmail.com
                 </a>
               </div>
@@ -112,7 +112,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center">
-          <p className="text-slate-400">
+          <p className="text-black">
             &copy; {new Date().getFullYear()} Lotus. All rights reserved. Designed with excellence.
           </p>
         </div>

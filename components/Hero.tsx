@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-contain  bg-center"
+      className="relative min-h-screen flex items-center bg-cover  bg-center"
       style={{
         backgroundImage: 'url(https://res.cloudinary.com/dh9uxczld/image/upload/v1763633286/lotus-herobg_hvopdt.jpg)',
       }}

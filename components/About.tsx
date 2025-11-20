@@ -12,13 +12,13 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-slate-50">
+    <section id="about" className="py-16 md:py-24 bg-green-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-in fade-in slide-in-from-left duration-700">
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://res.cloudinary.com/dh9uxczld/image/upload/v1763639339/IMG-20251120-WA0020_pkasuo.jpg"
                 alt="Hotel Exterior"
                 className="rounded-2xl shadow-2xl"
               />

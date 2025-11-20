@@ -22,7 +22,7 @@ const rooms: Room[] = [
     name: 'Cozy Standard Room',
     category: 'Executive',
     price: 2000,
-    image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dh9uxczld/image/upload/v1763638916/Screenshot_2025-11-19-16-42-33-87_6012fa4d4ddec268fc5c7112cbb265e7_wvpokz.jpg',
     description: 'Perfect for solo travelers or couples seeking comfort and affordability with essential amenities.',
     amenities: ['Free WiFi', 'LED TV', 'Air Conditioning'],
     capacity: '2 Guests',
@@ -33,7 +33,7 @@ const rooms: Room[] = [
     name: 'Deluxe Suite',
     category: 'Deluxe',
     price: 2500,
-    image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Spacious suite with modern furnishings, city views, and enhanced comfort for a memorable stay.',
     amenities: ['Free WiFi', 'Smart TV', 'Air Conditioning'],
     capacity: '3 Guests',
@@ -44,7 +44,7 @@ const rooms: Room[] = [
     name: 'Budget friendly',
     category: 'Basic',
     price: 999,
-    image: 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dh9uxczld/image/upload/v1763638916/Screenshot_2025-11-19-16-41-27-51_6012fa4d4ddec268fc5c7112cbb265e7_cft87p.jpg',
     description: 'Designed for business travelers with workspace, high-speed internet, and executive amenities.',
     amenities: ['Free WiFi','Air Conditioning'],
     capacity: '2 Guests',
@@ -83,7 +83,7 @@ const amenityIcons: { [key: string]: any } = {
 };
 
   return (
-    <section id="rooms" className="py-16 md:py-24 bg-slate-50">
+    <section id="rooms" className="py-16 md:py-24 bg-green-100">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-12 md:mb-16 animate-in fade-in slide-in-from-bottom duration-700">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">

@@ -33,7 +33,7 @@ export default function About() {
             <div className="animate-in fade-in slide-in-from-left duration-700">
               <div className="relative">
                 <img
-                  src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://res.cloudinary.com/dh9uxczld/image/upload/v1763639339/IMG-20251120-WA0020_pkasuo.jpg"
                   alt="Hotel Exterior"
                   className="rounded-2xl shadow-2xl"
                 />

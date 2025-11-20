@@ -15,7 +15,7 @@ export default function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Packages', href: '/packages' },
-    { name: 'Order', href: '/'},
+    { name: 'Order', href: 'https://lotus-palace.vercel.app/'},
   ];
 
   return (

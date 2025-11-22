@@ -12,7 +12,7 @@ export default function Topbar() {
             className="flex items-center gap-2 hover:text-green-400 transition-colors"
           >
             <Phone size={16} />
-            <span>+91 9792422803, 9565799909</span>
+            <span>+91 8299507456, 9565799909</span>
           </a>
           <a
             href="mailto:info@citywitty.com"
